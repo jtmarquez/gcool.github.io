@@ -1,1 +1,0 @@
-# gcool.github.io
