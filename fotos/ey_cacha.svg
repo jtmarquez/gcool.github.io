@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="117" viewBox="0 0 123 117">
+  <g id="Grupo_1" data-name="Grupo 1" transform="translate(-79 -32)">
+    <text id="ey_cacha_esto..." data-name="ey
+cacha
+esto..." transform="translate(111 62)" fill="#413535" font-size="24" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">EY</tspan><tspan x="0" y="32">CACHA</tspan><tspan x="0" y="64">ESTO...</tspan></text>
+    <g id="Rectángulo_1" data-name="Rectángulo 1" transform="translate(79 32)" fill="rgba(255,255,255,0)" stroke="#413535" stroke-width="5">
+      <rect width="123" height="117" stroke="none"/>
+      <rect x="2.5" y="2.5" width="118" height="112" fill="none"/>
+    </g>
+    <line id="Línea_1" data-name="Línea 1" y2="88" transform="translate(105.5 44.5)" fill="none" stroke="#413535" stroke-width="3"/>
+  </g>
+</svg>
