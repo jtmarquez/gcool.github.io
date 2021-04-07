@@ -188,16 +188,96 @@ a {
 }
 
 /* ---- ---- ---- Contenido Principal ---- ---- ---- */
-.main {
-	grid-area: contenido;
-	background: #f9f9f9;
-	padding: 40px;
+main {
+	padding-left: 2em;
+}
+.imagen > img {
+	height: 20em;
+	width: 20em;
+	object-fit: cover;
+}
+.imagen {
+	float: left;
+	margin: 1em 1em 1em 1em;
+}
+.texto_img {
+	visibility: hidden;
 }
 
-.main .titulo {
-	margin-bottom: 1000px;
+.receta:hover  .texto_img {
+	visibility: visible;
+
 }
 
+.contenido_principal {
+	padding: 2em 2em 2em 2em;
+}
+.container_receta {
+	margin-top: 2em;
+}
+.descripcion_posteador {
+	float: right;
+	width: 50%;
+}
+.foto_poster {
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 0.15em;
+	border-color: black;
+	background-color: rgba(243, 0, 0, 0.5);
+	display: block;
+	max-width:8em;
+	max-height:9em;
+	width: auto;
+	height: auto;
+	margin-top:2em;
+	margin-bottom: 2em;
+}
+
+.bloque_texto {
+	z-index: 1;
+	padding: 0.5em 1.3em 0.5em 1.3em;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	background-color: rgb(0,0,0); /* por si no soporta rgba*/
+	background-color: rgba(0,0,0,0.8);
+	top: 18em;
+	left: 0.3em;
+}
+.receta {
+	position: relative;
+	display: inline-block;
+}
+.receta_producto {
+	margin-top: 2em;
+}
+.receta:hover  .bloque_texto {
+	visibility: visible;
+}
+.tasty_true{
+	font-size: 2em;
+}
+.tasty_false {
+	font-size: 2em;
+	opacity: 20%;
+}
+.rating_container {
+	display: inline-block;
+}
+.container_pasos {
+	margin-top:2em;
+	margin-bottom:2em;
+}
+.container_pasos > ul, .container_pasos > h4 {
+	margin-top:1em;
+}
+ul.pasos {
+	list-style-type: decimal;
+}
+ul.pasos > li {
+	margin-bottom: 1em;
+}
 
 /* ---- ---- ---- Mediaqueries ---- ---- ---- */
 @media screen and (max-width: 1200px) {
@@ -247,106 +327,4 @@ a {
 	.main .recetas_recomendadas {
 		grid-template-columns: 1fr;
 	}
-}
-
-/* A continuacion está el codigo que agregué para poder darle mejor visualizacion a la parte de contenido pero no funcionan,
-sin emabrgo, al agregarlos tampoco afecta */
-
-
- /* No funciona*/
- .main .recetas_recomendadas .imagen {
-	width: 100%;
-	display: block;
-}
- /* No funciona*/
-.main .recetas_recomendadas .imagen img {
-	width: 100%;
-}
- /* No funciona*/
-.main .recetas_recomendadas .contenido{
-    width: 90%;
-    margin: auto;
-}
-
-/* -- Contenido Titulo y Controles -- */
- /* No funciona*/
-.main .contenido-titulo-controles {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
- /* No funciona*/
-.main .contenido-titulo-controles h3 {
-    color: #ff0000;
-    font-size: 30px;
-}
- /* No funciona*/
-.main .contenido-titulo-controles .indicadores button{
-    background: #000;
-    height: 3px;
-    width: 10px;
-    cursor: pointer;
-    border: none;
-    margin-right: 2px;
-}
- /* No funciona*/
-.main .contenido-titulo-controles .indicadores button:hover,
-.main .contenido-titulo-controles .indicadores button.activo {
-    background: red;
-}
-
-
-/* -- Contenido principal y Flechas -- */
- /* No funciona*/
-.main .recetas_recomendadas {
-    margin-bottom: 70px;
-}
- /* No funciona*/
-.main .recetas_recomendadas .contenido_principal{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
- /* No funciona*/
-.main .recetas_recomendadas .contenido_principal .flecha-izquierda,
-.main ..recetas_recomendadas .contenido_principal .flecha-derecha{
-    position: absolute;
-    border: none;
-    background: rgba(0, 0, 0, 0.3);
-    font-size: 40px;
-    height: 50%;
-    top: calc(50% - 25%);
-    line-height: 40px;
-    width: 50px; 
-    color: #fff;
-    cursor: pointer;
-    z-index: 500;
-    transition: .2s ease all;
-}
- /* No funciona*/
-.main .recetas_recomendadas .contenido_principal .flecha-izquierda:hover,
-.main .recetas_recomendadas .contenido_principal .flecha-derecha:hover {
-    background: rgba(0, 0, 0, 0.9);
-}
- /* No funciona*/
-.main .recetas_recomendadas .contenido_principal .flecha-izquierda{
-    left: 0;
-}
- /* No funciona*/
-.main .recetas_recomendadas .contenido_principal .flecha-derecha{
-    right: 0;
-}
-
-/* -- Carrusel-- */
- /* No funciona*/
-.main .recetas_recomendadas .contenido-carrusel{
-    width: 100%;
-    padding: 20px, 0;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
- /* No funciona*/
-.main .recetas_recomendadas .contenido-carrusel .carrusel{
-    display: flex;
 }
