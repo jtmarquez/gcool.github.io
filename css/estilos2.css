@@ -155,7 +155,7 @@ a {
 	grid-area: menu;
 	background: #fff;
 	overflow: hidden;
-	position: fixed;
+	position: sticky;
 	left: 0;
 }
 
