@@ -194,6 +194,7 @@ a {
 /* ---- ---- ---- Contenido Principal ---- ---- ---- */
 main {
 	grid-area: contenido;
+	overflow: hidden;
 	padding-left: 2em;
 }
 .imagen > img {
