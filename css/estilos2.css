@@ -38,7 +38,8 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	grid-gap: 20px;
-	position: fixed;
+	position: sticky;
+	top: 0;
 	grid-template-areas: "logo busqueda iconos";
 }
 
@@ -154,7 +155,6 @@ a {
 	grid-area: menu;
 	background: #fff;
 	overflow: hidden;
-	position: fixed;
 	left: 0;
 }
 
@@ -193,7 +193,6 @@ a {
 /* ---- ---- ---- Contenido Principal ---- ---- ---- */
 main {
 	grid-area: contenido;
-	overflow: hidden;
 	padding-left: 2em;
 }
 .imagen > img {
