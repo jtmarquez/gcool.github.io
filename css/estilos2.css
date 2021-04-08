@@ -193,6 +193,7 @@ a {
 
 /* ---- ---- ---- Contenido Principal ---- ---- ---- */
 main {
+	grid-area: contenido;
 	padding-left: 2em;
 }
 .imagen > img {
