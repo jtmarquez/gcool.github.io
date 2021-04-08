@@ -155,6 +155,8 @@ a {
 .menu-lateral {
 	grid-area: menu;
 	background: #fff;
+	position: -webkit-sticky;
+	position: sticky;
 	overflow: hidden;
 	left: 0;
 }
