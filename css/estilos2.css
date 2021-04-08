@@ -156,7 +156,7 @@ a {
 	grid-area: menu;
 	background: #fff;
 	position: fixed;
-	overflow: hidden;
+	overflow: inherit;
 }
 
 .menu-lateral a {
