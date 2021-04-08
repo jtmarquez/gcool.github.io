@@ -38,7 +38,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	grid-gap: 20px;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	grid-template-areas: "logo busqueda iconos";
 }
